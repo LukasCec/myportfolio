@@ -18,6 +18,30 @@
     --foreground: #ededed;
   }
 }
+li{
+  list-style: disc inside;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #454545 rgba(255, 255, 255, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border-radius: 12px;
+  border: 3px solid #ffffff;
+}
 
 body {
   background: var(--background);
