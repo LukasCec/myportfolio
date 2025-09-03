@@ -18,9 +18,7 @@
     --foreground: #ededed;
   }
 }
-li{
-  list-style: disc inside;
-}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

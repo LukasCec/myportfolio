@@ -29,6 +29,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteShell>{children}</SiteShell>
         </body>
         </html>
-    );
+    ); 
 }
 
