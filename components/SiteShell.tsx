@@ -26,13 +26,13 @@ function MobileTopbar({ onOpen }: { onOpen: () => void }) {
 export default function SiteShell({ children }: { children: React.ReactNode }) {
     const [open, setOpen] = useState(false);
 
-    // lock body scroll pri otvorenom menu
+
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "";
         return () => { document.body.style.overflow = ""; };
     }, [open]);
 
-    // Esc na zatvorenie
+
     useEffect(() => {
         const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
         window.addEventListener("keydown", onKey);
@@ -40,12 +40,12 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     }, []);
 
     return (
-        // 👇 GRID: mobile = 1 stĺpec, od md = [sidebar, content]
+
         <div className="grid h-screen grid-cols-1 md:grid-cols-[18rem_1fr]">
-            {/* desktop sidebar – nikdy nezaberá miesto na mobile */}
+
             <Sidebar variant="desktop" />
 
-            {/* pravý stĺpec: topbar (iba mobile) + scrollovateľný obsah */}
+
             <div className="flex min-h-0 flex-col">
                 <MobileTopbar onOpen={() => setOpen(true)} />
 
@@ -54,16 +54,16 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </main>
             </div>
 
-            {/* FULLSCREEN mobilné menu */}
+
             <div className={["md:hidden fixed inset-0 z-50", open ? "" : "pointer-events-none"].join(" ")}>
-                {/* overlay */}
+
                 <div
                     onClick={() => setOpen(false)}
                     className={["absolute inset-0 bg-black/50 backdrop-blur-[2px] transition-opacity duration-300",
                         open ? "opacity-100" : "opacity-0",
                     ].join(" ")}
                 />
-                {/* panel */}
+
                 <div
                     className={[
                         "absolute inset-y-0 left-0 w-[92%] max-w-sm",

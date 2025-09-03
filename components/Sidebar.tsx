@@ -45,7 +45,7 @@ export default function Sidebar({ variant = "desktop", onClose }: Props) {
             <nav className="p-3">
                 <ul className="space-y-1">
                     {LINKS.map((item) => (
-                        <li key={item}>
+                        <li className="list-none hover:scale-[107%] duration-200" key={item}>
                             <a className="flex items-center justify-between px-3 py-2 rounded-lg text-sm duration-200 hover:bg-neutral-800/80" href="#">
                                 <span>{item}</span>
                                 <span className="text-neutral-500">→</span>
