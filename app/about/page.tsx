@@ -18,59 +18,47 @@ export default function AboutPage() {
             <div className="space-y-5">
                 <p className="text-neutral-300">
                     Hello there! Thanks for visiting my personal website. I’m Lukáš Čeč, a passionate web developer.
-                    I love building modern, accessible, and performant products with Next.js, TypeScript and Tailwind CSS.
-                    On the backend, I enjoy Go/Node.js; for mobile, I explore Kotlin. I like solving complex problems
-                    collaboratively and bringing clarity to every layer of an application.
+                    I love building modern, accessible, and performant applications with Next.js, TypeScript and Tailwind CSS.
+                    I am also making games in Unity with C#. Right now, I’m working as Game Design lector at Algorithmics s.r.o.
+                    As child I attended audio-visual courses, which sparked my interest in technology and creativity.
+
                 </p>
                 <p className="text-neutral-300">
                     I believe great communication and team synergy are keys to success. I’m always excited to learn from others,
-                    share knowledge, and contribute to impactful projects.
+                    and share knowledge.
                 </p>
                 <p className="text-neutral-300">Best regards,</p>
                 <Image src="/signature.png" height="50" width="100" alt="Signature" className="h-12 w-auto" />
             </div>
 
-            {/* === Career === */}
+
             <SectionHeader title="Career" subtitle="My professional journey." className="pt-2" />
             <div className="space-y-4">
                 <CareerItem
-                    logo="/about/company-1.png"
-                    role="Backend Golang Developer"
-                    company="Some Company s.r.o."
+                    logo="/job1.png"
+                    role="Programming Lector"
+                    company="Algorithmics s.r.o."
                     location="Košice, Slovakia"
-                    period="Jul 2025 – Sep 2025"
-                    duration="2 Months"
-                    type="Internship"
-                    onsite="Onsite"
-                    responsibilities={[
-                        "Designed REST APIs and optimized DB queries.",
-                        "Implemented background workers with queue.",
-                        "Collaborated with frontend to ship features weekly.",
-                    ]}
-                />
-                <CareerItem
-                    logo="/about/company-2.png"
-                    role="Frontend Web Developer"
-                    company="Another Company a.s."
-                    location="Bratislava, Slovakia"
-                    period="May 2025 – Nov 2025"
-                    duration="5 Months"
-                    type="Internship"
+                    period="Sep 2021 – Present"
+                    duration="4 Years"
+                    type="Part-time"
                     onsite="Remote"
                     responsibilities={[
-                        "Built UI with Next.js + Tailwind; improved accessibility.",
-                        "Set up CI for lint/test; cut PR cycle time by 30%.",
+                        "Teach Game Design in Unity with C# to kids 14-17 years old.",
+                        "Teach Web development (HTML, CSS and JS) to kids 7-14 years old.",
+                        "Participate on programming Summer Camps.",
                     ]}
                 />
+
                 <CareerItem
-                    logo="/about/org-1.png"
-                    role="Head of Technology"
-                    company="Student Organization"
+                    logo="job2.png"
+                    role="Freelance Web Developer"
+                    company="Self-employed"
                     location="Košice, Slovakia"
-                    period="Dec 2024 – Present"
-                    duration="9 Months"
-                    type="Part-time"
-                    onsite="Onsite"
+                    period="Dec 2021 – Present"
+                    duration="4 Years"
+                    type="Freelance"
+                    onsite="Remote"
                 />
             </div>
 
@@ -82,12 +70,20 @@ export default function AboutPage() {
 
             <div className="mt-4 space-y-4">
                 <EducationItem
-                    logo="/about/university.png"
+                    logo="university.svg"
                     school="Technical University of Košice"
                     degree="Bachelor’s degree"
-                    meta="Information Systems"
-                    period="2022 – 2026"
+                    meta="Informatics"
+                    period="2022 – 2025"
                     location="Košice, Slovakia"
+                />
+                <EducationItem
+                    logo="school.jpg"
+                    school="Stredná priemyselná škola technická"
+                    degree="Graduate"
+                    meta="Informačné a sieťové technológie"
+                    period="2018 – 2022"
+                    location="Spišská Nová Ves, Slovakia"
                 />
             </div>
         </div>
