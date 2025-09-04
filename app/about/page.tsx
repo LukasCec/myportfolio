@@ -2,13 +2,16 @@ import SectionHeader from "@/components/SectionHeader";
 import CareerItem from "@/components/about/CareerItem";
 import DownloadButtons from "@/components/about/DownloadButtons";
 import EducationItem from "@/components/about/EducationItem";
-
+import AboutPhotoStack from "@/components/cards/AboutPhotoStack";
 import Image from "next/image";
+import {ReactNode} from "react";
 
 
 export const metadata = {
     title: "About • Lukáš Čeč",
 };
+
+
 
 export default function AboutPage() {
     return (
@@ -30,6 +33,7 @@ export default function AboutPage() {
                 <p className="text-neutral-300">Best regards,</p>
                 <Image src="/signature.png" height="50" width="100" alt="Signature" className="h-12 w-auto" />
             </div>
+
 
 
             <SectionHeader title="Career" subtitle="My professional journey." className="pt-2" />
@@ -77,6 +81,7 @@ export default function AboutPage() {
                     period="2022 – 2025"
                     location="Košice, Slovakia"
                 />
+
                 <EducationItem
                     logo="school.jpg"
                     school="Stredná priemyselná škola technická"
@@ -86,6 +91,8 @@ export default function AboutPage() {
                     location="Spišská Nová Ves, Slovakia"
                 />
             </div>
+
+
         </div>
     );
 }

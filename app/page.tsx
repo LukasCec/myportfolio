@@ -1,6 +1,7 @@
 import FeaturedSections from "@/components/home/FeaturedSections";
 import Skills from "@/components/skills/Skills";
 import Image from "next/image";
+import AboutPhotoStack from "@/components/cards/AboutPhotoStack";
 
 
 export default function Page() {
@@ -27,6 +28,7 @@ export default function Page() {
           <FeaturedSections />
 
         <div className="h-[1200px]" />
+
       </section>
   );
 }

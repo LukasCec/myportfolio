@@ -52,7 +52,7 @@ export default function SpotlightCard({ className, children }: Props) {
                 }}
             />
             <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-white/10" />
-            <div className="relative z-10">{children}</div>
+            <div className="relative z-20">{children}</div>
         </div>
     );
 }
